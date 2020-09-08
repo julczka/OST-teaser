@@ -303,6 +303,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-weight: 400;
   }
 }
 
