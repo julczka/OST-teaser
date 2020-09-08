@@ -24,7 +24,7 @@ function countDown() {
 
   // If the count down is finished, write some text
   if (distance < 0) {
-    v.innerHTML = 'Åbner';
+    v.innerHTML = 'Åben!';
     v.classList.add('opened');
 
     g[0].style.display = 'none';

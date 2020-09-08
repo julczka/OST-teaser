@@ -60,6 +60,7 @@ html {
 
 body {
   color: $text-color;
+  font-size: 16px;
   max-width: 1500px;
   margin: 0 auto;
   overflow: hidden;
@@ -112,7 +113,7 @@ p {
     align-items: center;
     justify-content: space-around;
     max-height: 275px;
-    margin: 3rem 2rem 2rem 2rem;
+    margin: 5vh 5vw;
   }
 
   &__col {
@@ -153,7 +154,7 @@ p {
   align-items: center;
   justify-content: space-around;
 
-  margin: 0.5rem 2rem 0rem 2rem;
+  margin: 5vh 5vw;
 }
 
 .col {
@@ -215,4 +216,102 @@ p {
 
 .pink {
   color: $logo-pink;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  .soc-container {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .number {
+    font-size: 40vw;
+  }
+
+  .abner,
+  .dage {
+    font-weight: 300;
+    font-style: normal;
+    color: $logo-pink;
+    font-size: 7vw;
+  }
+
+  .dage {
+    top: 18vw;
+    left: 34vw;
+  }
+
+  .opened {
+    font-size: 20vw;
+    top: 8vw;
+    left: 3vw;
+  }
+
+  .end {
+    justify-content: flex-end;
+  }
+
+  .header {
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-height: 275px;
+      margin: 5vh 5vw;
+      width: auto;
+    }
+
+    &__col {
+      width: 50%;
+      display: flex;
+      img {
+        width: 18vw;
+      }
+    }
+  }
+  .soc-container {
+    display: none;
+  }
+
+  .location__text {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .soc-container_footer {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

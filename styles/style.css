@@ -45,6 +45,7 @@ html {
 
 body {
   color: #272f33;
+  font-size: 16px;
   max-width: 1500px;
   margin: 0 auto;
   overflow: hidden;
@@ -104,7 +105,7 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-height: 275px;
-  margin: 3rem 2rem 2rem 2rem;
+  margin: 5vh 5vw;
 }
 
 .header__col {
@@ -157,7 +158,7 @@ p {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0.5rem 2rem 0rem 2rem;
+  margin: 5vh 5vw;
 }
 
 .col {
@@ -220,4 +221,97 @@ p {
 .pink {
   color: #ca7482;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  .soc-container {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .col {
+    width: 100%;
+  }
+  .col img {
+    width: 100%;
+  }
+  .number {
+    font-size: 40vw;
+  }
+  .abner,
+  .dage {
+    font-weight: 300;
+    font-style: normal;
+    color: #ca7482;
+    font-size: 7vw;
+  }
+  .dage {
+    top: 18vw;
+    left: 34vw;
+  }
+  .opened {
+    font-size: 20vw;
+    top: 8vw;
+    left: 3vw;
+  }
+  .end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-height: 275px;
+    margin: 5vh 5vw;
+    width: auto;
+  }
+  .header__col {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__col img {
+    width: 18vw;
+  }
+  .soc-container {
+    display: none;
+  }
+  .location__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .soc-container_footer {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=style.css.map */
