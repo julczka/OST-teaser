@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  /* Colors: */
+  --yellow-light: #f7e7c3;
+  --accent-blue: #f0f7fa;
+  --text: #272f33;
+  --yellow-dark: #f0dbad;
+  --logo-red: #a33146;
+  --logo-pink: #ca7482;
+  --unnamed-color-ffffff: #ffffff;
+  --background: #fffcf5;
+  --unnamed-color-707070: #707070;
+  /* Font/text values */
+  --unnamed-font-family-josefin-slab: Josefin Slab;
+  --unnamed-font-family-cormorant-garamond: Cormorant Garamond;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-style-italic: italic;
+  --unnamed-font-weight-300: 300px;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-36: 36px;
+  --unnamed-font-size-40: 40px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-30: 30px;
+  --unnamed-line-spacing-37: 37px;
+}
+
+html {
+  background: url(../assets/bcg.svg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fffcf5;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  color: #272f33;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+i {
+  font-size: 2.5rem;
+  margin: 0.2em;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-height: 275px;
+  margin: 5rem 2rem 2rem 2rem;
+}
+
+.header__col {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.self-al-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.location {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.2em;
+}
+
+.location__text {
+  font-family: josefin-slab, serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+a {
+  font-family: josefin-slab, serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #272f33;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

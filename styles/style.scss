@@ -1,0 +1,119 @@
+$background-color: #fffcf5;
+$text-color: #272f33;
+$yellow-dark: #f0dbad;
+$yellow-light: #f7e7c3;
+$logo-red: #a33146;
+$logo-pink: #ca7482;
+$accent-blue: #f0f7fa;
+
+:root {
+  /* Colors: */
+  --yellow-light: #f7e7c3;
+  --accent-blue: #f0f7fa;
+  --text: #272f33;
+  --yellow-dark: #f0dbad;
+  --logo-red: #a33146;
+  --logo-pink: #ca7482;
+  --unnamed-color-ffffff: #ffffff;
+  --background: #fffcf5;
+  --unnamed-color-707070: #707070;
+
+  /* Font/text values */
+  --unnamed-font-family-josefin-slab: Josefin Slab;
+  --unnamed-font-family-cormorant-garamond: Cormorant Garamond;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-style-italic: italic;
+  --unnamed-font-weight-300: 300px;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-36: 36px;
+  --unnamed-font-size-40: 40px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-30: 30px;
+  --unnamed-line-spacing-37: 37px;
+}
+
+// body {
+//   background-image: url('assets/bcg.svg');
+//   background-color: $background-color;
+// }
+
+html {
+  background: url(../assets/bcg.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $text-color;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+i {
+  font-size: 2.5rem;
+  margin: 0.2em;
+}
+
+.header {
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 275px;
+    margin: 5rem 2rem 2rem 2rem;
+  }
+
+  &__col {
+    width: 50%;
+    display: flex;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.self-al-top {
+  align-self: flex-start;
+}
+
+.location {
+  align-items: center;
+  margin-right: 0.2em;
+  &__text {
+    font-family: josefin-slab, serif;
+
+    font-weight: 100;
+
+    font-style: normal;
+  }
+}
+
+a {
+  font-family: josefin-slab, serif;
+
+  font-weight: 100;
+
+  font-style: normal;
+  color: $text-color;
+  text-decoration: none;
+}
