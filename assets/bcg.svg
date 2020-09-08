@@ -10,10 +10,7 @@
 	.st4{opacity:0.27;fill:#CA7482;}
 	.st5{fill:#F0F7FA;}
 </style>
-<g>
-	<rect x="0.5" y="0.5" class="st0" width="1919" height="1079"/>
-	<path d="M1919,1v1078H1V1H1919 M1920,0H0v1080h1920V0L1920,0z"/>
-</g>
+
 <circle id="Ellipse_6" class="st1" cx="343.1" cy="1015.6" r="351"/>
 <circle id="Ellipse_9" class="st2" cx="759.1" cy="561.6" r="134"/>
 <circle id="Ellipse_10" class="st3" cx="893.1" cy="192.6" r="98"/>
