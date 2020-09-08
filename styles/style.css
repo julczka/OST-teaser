@@ -53,6 +53,13 @@ body {
 i {
   font-size: 2.5rem;
   margin: 0.2em;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 a {
@@ -70,8 +77,21 @@ a:visited {
 
 a:hover {
   color: #ca7482;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+}
+
+h1 {
+  font: italic normal 300 2rem cormorant-garamond;
+}
+
+h2 {
+  color: #a33146;
+  font: normal normal 600 3rem cormorant-garamond;
+}
+
+p {
+  font: normal normal normal 1.2rem cormorant-garamond;
+  text-justify: inter-word;
+  line-height: 1.5;
 }
 
 .header__row {
@@ -84,7 +104,7 @@ a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-height: 275px;
-  margin: 5rem 2rem 2rem 2rem;
+  margin: 3rem 2rem 2rem 2rem;
 }
 
 .header__col {
@@ -92,6 +112,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__col img {
+  width: 14vw;
 }
 
 .flex {
@@ -133,15 +157,16 @@ a:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0rem 2rem 0rem 2rem;
+  margin: 0.5rem 2rem 0rem 2rem;
 }
 
 .col {
   width: 50%;
+  padding: 1em;
 }
 
 .col img {
-  width: 125%;
+  width: 130%;
 }
 
 .relative {
@@ -186,5 +211,13 @@ a:hover {
   font-size: 10vw;
   top: 8vw;
   left: 3vw;
+}
+
+.signature {
+  line-height: 2.5;
+}
+
+.pink {
+  color: #ca7482;
 }
 /*# sourceMappingURL=style.css.map */
