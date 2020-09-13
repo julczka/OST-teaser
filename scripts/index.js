@@ -1,39 +1,44 @@
 // Set the date we're counting down to
 var countDownDate = new Date('Sep 15, 2020 10:00:00').getTime();
 
-// Update the count down every 1 second
 function countDown() {
-  // Get today's date and time
   var now = new Date().getTime();
 
   var v = document.getElementById('demo');
   var g = document.getElementsByClassName('off');
+  var a = document.getElementsByClassName('abner');
 
-  // Find the distance between now and the count down date
   var distance = countDownDate - now;
-  console.log(distance);
-  // Time calculations for days, hours, minutes and seconds
+  console.log(distance, 'distance');
+
   var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
-  console.log(days);
-  //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  console.log(days, 'days');
 
-  // Display the result in the element with id="demo"
-  v.innerHTML = days;
-  // + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+  var check = distance / (1000 * 60 * 60 * 24);
+  console.log(check, 'check');
 
-  // If the count down is finished, write some text
   if (distance <= 0) {
     v.innerHTML = 'Åben!';
     v.classList.add('opened');
 
     g[0].style.display = 'none';
     g[1].style.display = 'none';
-  }
-
-  function turnOff(el) {
-    el.style.display = 'none';
+  } else if (check < 1.416 && check > 0.416) {
+    {
+      v.innerHTML = 'i morgen';
+      v.classList.add('opened');
+      a[0].innerHTML = 'Åbner';
+      g[1].style.display = 'none';
+    }
+  } else if (check <= 0.416) {
+    {
+      v.innerHTML = 'kl. 10';
+      v.classList.add('opened');
+      a[0].innerHTML = 'Åbner';
+      g[1].style.display = 'none';
+    }
+  } else {
+    v.innerHTML = days;
   }
 }
 
